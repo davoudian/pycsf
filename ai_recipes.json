@@ -462,7 +462,7 @@
       "SO4": 0, 
       "PO4": 0, 
       "Cs": 0, 
-      "notes": ""
+      "notes": "<br /><br/>"
     }, 
     {
       "group": "Energy sources", 
@@ -494,7 +494,7 @@
       "SO4": 0, 
       "PO4": 0, 
       "Cs": 0, 
-      "notes": ""
+      "notes": "<br /><br/>"
     }, 
     {
       "group": "Energy sources", 
@@ -824,10 +824,26 @@
       "recipes": [
         {
           "notes": null, 
-          "solution": "ACSF 10.0", 
+          "solution": "MP ACSF Ca1.3", 
           "volumes": [
             2000, 
             1000
+          ]
+        }
+      ], 
+      "order": [], 
+      "stocks": {}, 
+      "showMW": false
+    }, 
+    {
+      "name": "IVSCC", 
+      "showConcentration": false, 
+      "recipes": [
+        {
+          "notes": null, 
+          "solution": "IVSCC Internal", 
+          "volumes": [
+            30
           ]
         }
       ], 
@@ -839,8 +855,32 @@
   "solutions": [
     {
       "group": "IVSCC", 
-      "name": "ACSF 3", 
-      "notes": "Used by IVSCC for recording.<br/>", 
+      "name": "ACSF I", 
+      "notes": "ACSF.I was used for transcardial perfusion and has the following composition: 0.5mM calcium chloride (dehydrate), 25mM D-glucose, 20mM HEPES, 10mM magnesium sulfate, 1.25mM sodium phosphate monobasic monohydrate, 3mM myoinositol, 12mM N-acetyl-L-cysteine, 96 mM N-methyl-d-glucaminechloride(NMDG-Cl), 2.5mM potassium chloride, 25mM sodium bicarbonate, 5mM sodium L-ascorbate, 3mM sodium pyruvate, 0.01mM taurine, and 2mM thiourea. Prior to use, the solution was equilibrated with 95% O2, 5% CO2. Osmolality was verified to be between 295-305 mOsm/kg.pH was adjusted to 7.3 using HCl. For increased neuronal survival, ACSF.I was modified to contain a decreased sodium concentration (substituted with NMDG, Zhaoet al., 2011) and elevated magnesium concentrations as well as N-acetyl-L-cysteineand sodium ascorbate to reduce oxidative damage.<br /><br/>", 
+      "compareAgainst": null, 
+      "reagents": {
+        "HEPES": 17.5, 
+        "calcium chloride dihydrate": 0.5, 
+        "glucose": 25, 
+        "hydrochloric acid": 98, 
+        "magnesium sulfate heptahydrate": 10, 
+        "myo-inositol": 3, 
+        "n-acetyl-l-cysteine": 12, 
+        "n-methyl-d-glucamine": 98, 
+        "potassium chloride": 2.5, 
+        "sodium bicarbonate": 25, 
+        "sodium l-ascorbate": 5, 
+        "sodium phosphate monobasic": 1.25, 
+        "sodium pyruvate": 3, 
+        "taurine": 0.01, 
+        "thiourea": 2
+      }, 
+      "type": "external"
+    }, 
+    {
+      "group": "IVSCC", 
+      "name": "ACSF III", 
+      "notes": "ACSF.III was used for bathing tissue during the electrophysiological recording session and contains 2mM calcium chloride (dehydrate), 12.5mM D-glucose, 1mM magnesium sulfate, 1.25mM sodium phosphate monobasic monohydrate, 2.5mM potassium chloride, 26mM sodium bicarbonate, and 126mM sodium chloride. To block fast glutamatergic and GABAergic synaptic transmission, 1mM kynurenic acid and 0.1mM picrotoxin were added, respectively. Prior to use, the solution was equilibrated with 95% O2, 5% CO2. Osmolality was verified to be between 295-305 mOsm/kg.pH was adjusted to 7.3 using HCl or NaOH.<br/><br /><br/>", 
       "compareAgainst": null, 
       "reagents": {
         "calcium chloride dihydrate": 2, 
@@ -857,8 +897,8 @@
     }, 
     {
       "group": "IVSCC", 
-      "name": "ACSF 4", 
-      "notes": "Used by IVSCC for incubation.<br/>", 
+      "name": "ACSF IV", 
+      "notes": "ACSF.IV was used for tissue maintenance prior to recording and contains 2mM calcium chloride (dehydrate), 25mM  D-glucose, 20 mM  HEPES,  2mM  magnesium  sulfate,  1.25mM  sodium  phosphate  monobasic monohydrate,  3mM myo  inositol,  12.3mM  N-acetyl-L-cysteine,  2.5mM  potassium chloride,  25mM  sodium bicarbonate, 94 mM sodium chloride, 5mM sodium L-ascorbate, 3mM sodium pyruvate, 0.01mM taurine, and 2mM thiourea. Prior to use, the solution wasequilibrated with 95% O2, 5% CO2. Osmolality was verified to be between 295-305 mOsm/kg.pH was adjusted to 7.3 using NaOH.<br/>", 
       "compareAgainst": null, 
       "reagents": {
         "HEPES": 14, 
@@ -877,6 +917,23 @@
         "thiourea": 2
       }, 
       "type": "external"
+    }, 
+    {
+      "group": "IVSCC", 
+      "name": "IVSCC Internal", 
+      "notes": "Electrodes were filled with an internal solution containing 126mM potassium gluconate, 10.0mM HEPES, 0.3mM ethylene glycol-bis (2-aminoethylether)-N,N,N\u2019,N\u2019-tetraacetic acid, 4mM potassium chloride, 0.3mM guanosine 5\u2019-triphosphate sodium salt hydrate, 10 mM phosphocreatine disodium salt hydrate, 4mM adenosine 5\u2032-triphosphate magnesium salt, and 0.5% biocytin (Sigma B4261). Osmolality was verified to be between 285-295 mOsm/kg. Internal solution batches were used within 60 days. pH was adjusted to 7.3 using KOH.<br/><br /><br/>2017-06: Adjusted concentrations of phpsphocreatine, ATP, and GTP to match actual quantities present in these products. Previously, the molecular weight values were too low. See reagent notes.<br/>", 
+      "compareAgainst": "MP ACSF Ca1.3", 
+      "reagents": {
+        "EGTA": 0.3, 
+        "GTP sodium hydrate": 0.23, 
+        "HEPES": 10, 
+        "biocytin": 13.4, 
+        "magnesium ATP": 3.4, 
+        "phosphocreatine disodium hydrate": 6.35, 
+        "potassium chloride": 4, 
+        "potassium gluconate": 130
+      }, 
+      "type": "internal"
     }, 
     {
       "group": "HCT", 
@@ -913,9 +970,9 @@
     }, 
     {
       "group": "SynPhys", 
-      "name": "ACSF 10.0", 
+      "name": "MP ACSF Ca1.3", 
       "notes": "* Physiological divalent concentrations to preserve synaptic dynamics<br/>", 
-      "compareAgainst": null, 
+      "compareAgainst": "MP Internal 1", 
       "reagents": {
         "calcium chloride dihydrate": 1.3, 
         "glucose": 12.5, 
@@ -929,28 +986,59 @@
       "type": "external"
     }, 
     {
-      "group": "IVSCC", 
-      "name": "ACSF 1", 
-      "notes": "Used by IVSCC for perfusion and slicing.<br/>", 
-      "compareAgainst": null, 
+      "group": "SynPhys", 
+      "name": "MP ACSF Ca2", 
+      "notes": "", 
+      "compareAgainst": "MP Internal 1", 
       "reagents": {
-        "HEPES": 17.5, 
-        "calcium chloride dihydrate": 0.5, 
-        "glucose": 25, 
-        "hydrochloric acid": 98, 
-        "magnesium sulfate heptahydrate": 10, 
-        "myo-inositol": 3, 
-        "n-acetyl-l-cysteine": 12, 
-        "n-methyl-d-glucamine": 98, 
-        "potassium chloride": 2.5, 
-        "sodium bicarbonate": 25, 
-        "sodium l-ascorbate": 5, 
-        "sodium phosphate monobasic": 1.25, 
-        "sodium pyruvate": 3, 
-        "taurine": 0.01, 
-        "thiourea": 2
+        "calcium chloride dihydrate": 2, 
+        "glucose": 12.5, 
+        "magnesium sulfate heptahydrate": 1, 
+        "potassium chloride": 3, 
+        "sodium bicarbonate": 18, 
+        "sodium chloride": 126, 
+        "sodium l-ascorbate": 0.2, 
+        "sodium phosphate monobasic": 1.2
       }, 
       "type": "external"
+    }, 
+    {
+      "group": "SynPhys", 
+      "name": "MP Internal 1", 
+      "notes": "Multipatch internal based on IVSCC internal.<br/><br /><br/>KCl reduced from 4 to 3 mM in order to increase chloride driving force to improve detection of inhibitory synapses.<br/><br /><br/>See IVSCC internal notes for explanation of phosphocreatine/ATP/GTP concentrations.<br/><br /><br/><br /><br /><br/>", 
+      "compareAgainst": "MP ACSF Ca1.3", 
+      "reagents": {
+        "EGTA": 0.3, 
+        "GTP sodium hydrate": 0.23, 
+        "HEPES": 10, 
+        "biocytin": 13.4, 
+        "magnesium ATP": 3.4, 
+        "phosphocreatine disodium hydrate": 6.35, 
+        "potassium chloride": 3, 
+        "potassium gluconate": 130, 
+        "potassium hydroxide": 10, 
+        "sucrose": 4
+      }, 
+      "type": "internal"
+    }, 
+    {
+      "group": "SynPhys", 
+      "name": "MP Internal 2", 
+      "notes": "Multipatch internal based on MP Internal 1<br/><br /><br/>Switched to GTP Tris and phosphocreatine bg because they appear to have more reliable molecular weight specifications.<br/><br /><br/>Increased to standard concentrations of ATP, GTP, and phosphocreatine.<br/>", 
+      "compareAgainst": "MP ACSF Ca1.3", 
+      "reagents": {
+        "EGTA": 0.3, 
+        "GTP tris": 0.3, 
+        "HEPES": 10, 
+        "biocytin": 13.4, 
+        "magnesium ATP": 4, 
+        "phosphocreatine bg": 10, 
+        "potassium chloride": 3, 
+        "potassium gluconate": 130, 
+        "potassium hydroxide": 10, 
+        "sucrose": 4
+      }, 
+      "type": "internal"
     }, 
     {
       "group": "SynPhys", 
@@ -972,42 +1060,6 @@
         "tris base": 22
       }, 
       "type": "external"
-    }, 
-    {
-      "group": "SynPhys", 
-      "name": "Internal", 
-      "notes": "* Low chloride reversal potential to exaggerate inhibitory synaptic events<br/><br /><br/>", 
-      "compareAgainst": "ACSF 10.0", 
-      "reagents": {
-        "EGTA": 0.3, 
-        "GTP sodium hydrate": 0.3, 
-        "HEPES": 10, 
-        "biocytin": 13.4, 
-        "magnesium ATP": 4, 
-        "phosphocreatine disodium hydrate": 10, 
-        "potassium chloride": 3, 
-        "potassium gluconate": 130, 
-        "potassium hydroxide": 10, 
-        "sucrose": 4
-      }, 
-      "type": "internal"
-    }, 
-    {
-      "group": "IVSCC", 
-      "name": "IVSCC Internal", 
-      "notes": "Electrodes were filled with an internal solution containing 126mM potassium gluconate, 10.0mM HEPES, 0.3mM  ethylene  glycol-bis  (2-aminoethylether)-N,N,N\u2019,N\u2019-tetraacetic  acid,  4mM  potassium  chloride,  0.3mM guanosine 5\u2019-triphosphate sodium salt hydrate, 10 mM phosphocreatine disodium salt hydrate, 4mM adenosine 5\u2032-triphosphate magnesium salt, and 0.5% biocytin (Sigma B4261). Osmolality was verified to be between 285-295 mOsm/kg. Internal solution batches were used within 60 days. pH was adjusted to 7.3 using KOH.<br/>", 
-      "compareAgainst": "ACSF 10.0", 
-      "reagents": {
-        "EGTA": 0.3, 
-        "GTP sodium hydrate": 0.3, 
-        "HEPES": 10, 
-        "biocytin": 13.4, 
-        "magnesium ATP": 4, 
-        "phosphocreatine disodium hydrate": 10, 
-        "potassium chloride": 4, 
-        "potassium gluconate": 130
-      }, 
-      "type": "internal"
     }
   ]
 }
