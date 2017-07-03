@@ -843,7 +843,15 @@
           "solution": "MP ACSF Ca1.3", 
           "volumes": [
             2000, 
-            1000
+            4000
+          ]
+        }, 
+        {
+          "notes": null, 
+          "solution": "MP ACSF Ca2", 
+          "volumes": [
+            2000, 
+            4000
           ]
         }
       ], 
@@ -940,11 +948,11 @@
       "notes": "Electrodes were filled with an internal solution containing 126mM potassium gluconate, 10.0mM HEPES, 0.3mM ethylene glycol-bis (2-aminoethylether)-N,N,N\u2019,N\u2019-tetraacetic acid, 4mM potassium chloride, 0.3mM guanosine 5\u2019-triphosphate sodium salt hydrate, 10 mM phosphocreatine disodium salt hydrate, 4mM adenosine 5\u2032-triphosphate magnesium salt, and 0.5% biocytin (Sigma B4261). Osmolality was verified to be between 285-295 mOsm/kg. Internal solution batches were used within 60 days. pH was adjusted to 7.3 using KOH.<br/><br /><br/>2017-06: Adjusted concentrations of phpsphocreatine, ATP, and GTP to match actual quantities present in these products. Previously, the molecular weight values were too low. See reagent notes.<br/>", 
       "compareAgainst": "MP ACSF Ca1.3", 
       "reagents": {
+        "ATP magnesium salt": 3.4, 
         "EGTA": 0.3, 
         "GTP sodium salt hydrate": 0.23, 
         "HEPES": 10, 
         "biocytin": 13.4, 
-        "ATP magnesium salt": 3.4, 
         "phosphocreatine disodium salt hydrate": 6.35, 
         "potassium chloride": 4, 
         "potassium gluconate": 130
@@ -1024,11 +1032,11 @@
       "notes": "Multipatch internal based on IVSCC internal.<br/><br /><br/>KCl reduced from 4 to 3 mM in order to increase chloride driving force to improve detection of inhibitory synapses.<br/><br /><br/>See IVSCC internal notes for explanation of phosphocreatine/ATP/GTP concentrations.<br/><br /><br/><br /><br /><br/>", 
       "compareAgainst": "MP ACSF Ca1.3", 
       "reagents": {
+        "ATP magnesium salt": 3.4, 
         "EGTA": 0.3, 
         "GTP sodium salt hydrate": 0.23, 
         "HEPES": 10, 
         "biocytin": 13.4, 
-        "ATP magnesium salt": 3.4, 
         "phosphocreatine disodium salt hydrate": 6.35, 
         "potassium chloride": 3, 
         "potassium gluconate": 130, 
@@ -1040,17 +1048,17 @@
     {
       "group": "SynPhys", 
       "name": "MP Internal 2", 
-      "notes": "Multipatch internal based on MP Internal 1<br/><br /><br/>Switched to GTP Tris and phosphocreatine bg because they appear to have more reliable molecular weight specifications.<br/><br /><br/>Increased to standard concentrations of ATP, GTP, and phosphocreatine.<br/>", 
+      "notes": "Multipatch internal based on MP Internal 1<br /><br />Increased concentrations of ATP and GTP to match published values. Phosphocreatine was left unchanged to avoid changing the Na reversal potential.<br/><br /><br/>Changed balance of KCl / K-gluc in order to match K reversal to IVSCC, while keeping low Cl reversal for enhancing inhibitory currents.<br/>", 
       "compareAgainst": "MP ACSF Ca1.3", 
       "reagents": {
+        "ATP magnesium salt": 4, 
         "EGTA": 0.3, 
         "GTP sodium salt hydrate": 0.3, 
         "HEPES": 10, 
         "biocytin": 13.4, 
-        "ATP magnesium salt": 4, 
-        "phosphocreatine disodium salt hydrate": 10, 
+        "phosphocreatine disodium salt hydrate": 6.35, 
         "potassium chloride": 3, 
-        "potassium gluconate": 130, 
+        "potassium gluconate": 121, 
         "potassium hydroxide": 10, 
         "sucrose": 4
       }, 
